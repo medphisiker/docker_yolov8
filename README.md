@@ -1,4 +1,4 @@
-# docker_for_data_collection
+# docker image pytorch_yolov8 c поддержкой nVidia GPU
 
 Docker-образ, содержащий рабочее окружение для запуска `ultralytics yolov8`.
 
