@@ -1,8 +1,8 @@
 import torch
 
 print(f'Версия PyTorch, - {torch.__version__}', )
-print(
-    f'Доступность устройства CUDA для вычислений, - {torch.cuda.is_available()}')
+print('Доступность устройства CUDA для вычислений, - ',
+      {torch.cuda.is_available()})
 
 cuda_device_num = torch.cuda.current_device()
 cuda_device_name = torch.cuda.get_device_name(cuda_device_num)
