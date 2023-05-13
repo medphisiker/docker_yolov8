@@ -1,11 +1,16 @@
 import torch
 
-print('Версия PyTorch', torch.__version__)
-print('Доступность устройства CUDA для вычислений', torch.cuda.is_available())
-print('Текущее устройство CUDA', torch.cuda.current_device())
-print('Название текущего CUDA-устройства', torch.cuda.get_device_name(0))
+print(f'Версия PyTorch, - {torch.__version__}', )
+print(
+    f'Доступность устройства CUDA для вычислений, - {torch.cuda.is_available()}')
 
-print('Тест вычислений на текущем CUDA-устройстве')
+cuda_device_num = torch.cuda.current_device()
+cuda_device_name = torch.cuda.get_device_name(cuda_device_num)
+
+print(f'Номер текущего устройство CUDA, - {cuda_device_num}')
+print(f'Название текущего CUDA-устройства, - {cuda_device_name}')
+
+print('\nТест вычислений на текущем CUDA-устройстве\n')
 device = torch.device('cuda')
 t1 = torch.randn(1, 2).to(device)
 t2 = torch.randn(1, 2).to(device)
