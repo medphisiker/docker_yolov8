@@ -1,6 +1,3 @@
-# images
-*.jpg
-
 # deep learning models
 *.engine
 *.onnx
