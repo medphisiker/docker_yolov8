@@ -1,5 +1,5 @@
 # образ для контейнера
-FROM nvcr.io/nvidia/tensorrt:23.03-py3
+FROM nvcr.io/nvidia/tensorrt:22.08-py3
 
 # отключаем интерактивные вопросы при установке пакетов
 # при создании docker-контейнера
